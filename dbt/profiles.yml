@@ -1,0 +1,13 @@
+trino_pipeline:
+  target: dev
+  outputs:
+    dev:
+      type: trino
+      method: none
+      host: trino
+      port: 8080
+      user: admin
+      catalog: iceberg
+      schema: analytics
+      threads: 4
+      http_scheme: http
